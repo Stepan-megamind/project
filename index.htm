@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Физик.ок</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Подготовка к ЕГЭ по физике</h1>
+        <p>Выберите тему и решите задачи по ней.</p>
+    
+            </div>
+        </div>
+        <div class="user-profile">
+            <a href="#profile" class="profile-link">
+                <img src="Снимок экрана 2024-12-03 223958.png" alt="Профиль" class="profile-icon">
+            </a>
+            <div id="profile-modal" class="modal">
+                <!-- Модальное содержимое -->
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <h2>Профиль пользователя</h2>
+                    <label for="firstName">Имя:</label>
+                    <input type="text" id="firstName" placeholder="Введите ваше имя">
+                    <label for="lastName">Фамилия:</label>
+                    <input type="text" id="lastName" placeholder="Введите вашу фамилию">
+                    <button onclick="saveProfile()">Сохранить</button>
+                    <h3>Прогресс выполнения заданий</h3>
+                </div>
+            </div>
+            
+
+        </div>
+    </header>
+
+    <nav>
+        <ul class="tabs">
+            <li><a href="#mechanics" class="tab-link" onclick="openTab(event, 'mechanics')">Механика</a></li>
+            <li><a href="#kinematics" class="tab-link" onclick="openTab(event, 'kinematics')">Кинематика</a></li>
+            <li><a href="#thermodynamics" class="tab-link" onclick="openTab(event, 'thermodynamics')">Термодинамика</a></li>
+        </ul>
+    </nav>
+
+    <!-- Раздел Механика -->
+    <section id="mechanics" class="tab-content">
+        <h2>Механика</h2>
+        <section class="task">
+            <h3>Задача 1:</h3>
+            <p>Снаряд массой 4 кг, летящий со скоростью 400 м/⁠с, разрывается на две равные части, одна из которых летит в направлении движения снаряда, а другая — в противоположную сторону. В момент разрыва суммарная кинетическая энергия осколков увеличилась на величину 0,5Mдж. Определите скорость осколка, летящего по направлению движения снаряда.</p>
+            <form>
+                <label for="answer1">Ваш ответ:</label>
+                <input type="text" id="answer1">
+                <button type="button" onclick="checkAnswer('answer1', '900')">Проверить</button>
+            </form>
+            <div id="result-answer1"></div>
+            <a href="https://rutube.ru/video/a889e8ec23a5d5f30d731ae769a6e612/" target="_blank">Посмотреть решение на RuTube</a>
+        </section>
+
+        <section class="task">
+            <h3>Задача 2:</h3>
+            <p>Из пружинного пистолета выстрелили вертикально вниз в мишень, находящуюся на расстоянии 2 м от него. Совершив работу 0,12 Дж, пуля застряла в мишени. Какова масса пули, если пружина была сжата перед выстрелом на 2 см, а ее жесткость 100 Н/⁠м?</p>
+            <form>
+                <label for="answer2">Ваш ответ:</label>
+                <input type="text" id="answer2">
+                <button type="button" onclick="checkAnswer('answer2', '5')">Проверить</button>
+            </form>
+            <div id="result-answer2"></div>
+            <a href="https://rutube.ru/video/private/5f951749ecac5780581f13b6ed03a06f/?p=c34YOHSihDsoVyWOj2fE9A" target="_blank">Посмотреть решение на RuTube</a>
+        </section>
+
+        <section class="task">
+            <h3>Задача 3:</h3>
+            <p>Человек ростом h = 1,6 м, стоя на земле, кидает мяч из-⁠за головы и хочет перебросить его через забор высотой H = 4,8 м, находящийся на расстоянии l = 6,4 м от него. Определите модуль скорости, с которой необходимо бросить мяч, чтобы он перелетел через забор, коснувшись его в верхней точке своей траектории? Сопротивлением воздуха пренебречь.</p>
+            <form>
+                <label for="answer3">Ваш ответ:</label>
+                <input type="text" id="answer3">
+                <button type="button" onclick="checkAnswer('answer3', '11,3')">Проверить</button>
+            </form>
+            <div id="result-answer3"></div>
+            <a href="https://rutube.ru/video/private/0f80f01b73fda010f681880ef43a2013/?p=k9E-bHynQrVJ6LTu-QtgHA" target="_blank">Посмотреть решение на RuTube</a>
+        </section>
+    </section>
+
+    <!-- Раздел Кинематика -->
+    <section id="kinematics" class="tab-content">
+        <h2>Кинематика</h2>
+        <section class="task">
+            <h3>Задача 1:</h3>
+            <p>В безветренную погоду самолет затрачивает на перелет между городами 6 часов. Если во время полета дует постоянный боковой ветер перпендикулярно линии полета, то самолет затрачивает на перелет на 9 минут больше. Найдите скорость ветра, если скорость самолета относительно воздуха постоянна и равна 328 км.ч.</p>
+            <form>
+                <label for="answer4">Ваш ответ:</label>
+                <input type="text" id="answer4">
+                <button type="button" onclick="checkAnswer('answer4', '20')">Проверить</button>
+            </form>
+            <div id="result-answer4"></div>
+            <a href="https://www.youtube.com/watch?v=example1" target="_blank">Посмотреть решение на RuTube</a>
+        </section>
+
+        <section class="task">
+            <h3>Задача 2:</h3>
+            <p>На последнем километре тормозного пути скорость поезда уменьшилась на 10 м/с. Определите скорость в начале торможения, если общий тормозной путь поезда составил 4 км, а торможение было равнозамедленным. Ответ приведите в метрах в секунду.</p>
+            <form>
+                <label for="answer5">Ваш ответ:</label>
+                <input type="text" id="answer5">
+                <button type="button" onclick="checkAnswer('answer5', '20')">Проверить</button>
+            </form>
+            <div id="result-answer5"></div>
+            <a href="https://www.youtube.com/watch?v=example1" target="_blank">Посмотреть решение на RuTube</a>
+        </section>
+
+        <section class="task">
+            <h3>Задача 3:</h3>
+            <p>Тело брошено под углом 60° к горизонту с плоской горизонтальной поверхности с начальной скоростью 20 м/с. Сопротивление воздуха пренебрежимо мало. На каком минимальном расстоянии от точки бросания (по горизонтали) модуль проекции скорости тела на вертикальную ось будет составлять 25% от модуля проекции скорости тела на горизонтальную ось? Ответ приведите в метрах, округлив до целого числа.</p>
+            <form>
+                <label for="answer6">Ваш ответ:</label>
+                <input type="text" id="answer6">
+                <button type="button" onclick="checkAnswer('answer6', '15')">Проверить</button>
+            </form>
+            <div id="result-answer6"></div>
+            <a href="https://www.youtube.com/watch?v=example1" target="_blank">Посмотреть решение на RuTube</a>
+        </section>
+    </section>
+    <!-- Раздел Термодинамика -->
+    <section id="thermodynamics" class="tab-content">
+        <h2>Термодинамика</h2>
+        <section class="task">
+            <h3>Задача 1:</h3>
+            <p>При температуре 300 К и давлении 101325 Па плотность газа равна 1.3 кг/м³. Какова его молярная масса?</p>
+            <form>
+                <label for="answer7">Ваш ответ (кг/моль):</label>
+                <input type="text" id="answer7">
+                <button type="button" onclick="checkAnswer('answer7', '0.029')">Проверить</button>
+            </form>
+            <div id="result-answer7"></div>
+            <a href="https://www.youtube.com/watch?v=example1" target="_blank">Посмотреть решение на RuTube</a>
+        </section>
+
+        <section class="task">
+            <h3>Задача 2:</h3>
+            <p>Газ совершил работу 500 Дж, увеличив объем от 2 м³ до 3 м³ при постоянном давлении. Найдите давление.</p>
+            <form>
+                <label for="answer8">Ваш ответ (Па):</label>
+                <input type="text" id="answer8">
+                <button type="button" onclick="checkAnswer('answer8', '500')">Проверить</button>
+            </form>
+            <div id="result-answer8"></div>
+            <a href="https://www.youtube.com/watch?v=example1" target="_blank">Посмотреть решение на RuTube</a>
+        </section>
+
+        <section class="task">
+            <h3>Задача 3:</h3>
+            <p>Изменение внутренней энергии идеального газа составило 300 Дж при нагревании. Какое количество теплоты он получил?</p>
+            <form>
+                <label for="answer9">Ваш ответ (Дж):</label>
+                <input type="text" id="answer9">
+                <button type="button" onclick="checkAnswer('answer9', '300')">Проверить</button>
+            </form>
+            <div id="result-answer9"></div>
+            <a href="https://www.youtube.com/watch?v=example1" target="_blank">Посмотреть решение на RuTube</a>
+        </section>
+    </section>
+
+    <script>
+        function openTab(evt, tabName) {
+            let tabContent = document.querySelectorAll(".tab-content");
+            tabContent.forEach(tab => tab.style.display = "none");
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.classList.add("active");
+        }
+
+        function checkAnswer(inputId, correctAnswer) {
+            let answer = document.getElementById(inputId).value;
+            let resultDiv = document.getElementById("result-" + inputId);
+            if (answer.trim() === correctAnswer) {
+                resultDiv.innerHTML = '<p class="correct">Верно!</p>';
+            } else {
+                resultDiv.innerHTML = '<p class="incorrect">Неверно! Попробуйте еще раз.</p>';
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            document.querySelector(".tab-link").click();
+        });
+    </script>
+    <script>
+        document.querySelector('.profile-link').addEventListener('click', function(event) {
+            event.preventDefault();
+            document.getElementById('profile-modal').style.display = 'block';
+        });
+    
+        function closeModal() {
+            document.getElementById('profile-modal').style.display = 'none';
+        }
+    
+        function saveProfile() {
+            const firstName = document.getElementById('firstName').value;
+            const lastName = document.getElementById('lastName').value;
+            alert('Профиль сохранен: ${firstName} ${lastName}');
+    }
+  
+    </script>
+</body>
+</html>
